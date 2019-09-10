@@ -1,0 +1,16 @@
+/* single css */
+main.main-single{}
+	main.main-single figure.vehicle-image{}
+		main.main-single figure.vehicle-image img{}
+	main.main-single .vehicle-info{}
+		main.main-single .vehicle-info p{}
+		main.main-single .vehicle-info p.vehicle-status{}
+		main.main-single .vehicle-info p.vehicle-name{}
+		main.main-single .vehicle-info p.vehicle-brand{}
+		main.main-single .vehicle-info p.vehicle-type{}
+		main.main-single .vehicle-info p.vehicle-model{}
+		main.main-single .vehicle-info p.vehicle-power{}
+		main.main-single .vehicle-info p.vehicle-color{}
+		main.main-single .vehicle-info p.vehicle-group{}
+		main.main-single .vehicle-info span.rent-button{}
+			main.main-single .vehicle-info span.rent-button a{}

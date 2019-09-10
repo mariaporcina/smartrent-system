@@ -1,0 +1,62 @@
+/* login css */
+
+main.login-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+	main.login-main .small-container{
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	main.login-main .login{
+		box-shadow: 0 0 26px -12px #000000;
+		-webkit-box-shadow: 0 0 26px -12px #000000;
+	}
+		main.login-main .login .login-content{
+			background-color: var(--vermelho);
+			height: 100%;
+			padding: 80px 65px 150px;
+		}
+		main.login-main .login figure{
+			margin: 0 0 40px;
+		}
+			main.login-main .login figure img{
+				width: 100%;
+				max-width: 120px;
+				display: block;
+				margin: 0 auto;
+			}
+		main.login-main .login .login-content-text{
+			text-align: center;
+			color: #fff;
+		}
+			main.login-main .login .login-content-text h6{
+				font-size: 30px;
+				margin: 0 0 20px;
+			}
+			main.login-main .login .login-content-text p{
+				margin: 0;
+			}
+		main.login-main .login form.login-form{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+			padding: 0 30px;
+			background-color: #fff;
+		}
+			main.login-main .login form.login-form input{
+				padding: 7px 15px;
+				margin: 6px 0;
+				border: 1px solid #ccc;
+				outline: none;
+			}
+			main.login-main .login form.login-form input[type="submit"]{
+				border: none;
+				background-color: var(--vermelho);
+				color: #fff;
+				max-width: 100px;
+			}

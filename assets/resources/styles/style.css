@@ -1,0 +1,177 @@
+/*
+** css geral
+**
+** @import para importar css externo
+** single.css - página de cada veículo
+** index.css - página inicial
+** login.css - página de login
+**
+*/
+
+@import url('single.css');
+@import url('index.css');
+@import url('login.css');
+
+/* variáveis */
+
+:root{
+	--vermelho: #931F25;
+	--azul: #124559;
+}
+
+/* variáveis */
+
+/* body */
+
+body{
+
+}
+
+body.login-page{
+	height: 100vh;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* body */
+
+/* header */
+
+header{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--vermelho) 0%, var(--vermelho) 50%, var(--azul) 50%);
+	background: -webkit-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--vermelho) 0%, var(--vermelho) 50%, var(--azul) 50%);
+	background: -o-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--vermelho) 0%, var(--vermelho) 50%, var(--azul) 50%);
+	background: -ms-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--vermelho) 0%, var(--vermelho) 50%, var(--azul) 50%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--vermelho) 0%, var(--vermelho) 50%, var(--azul) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='var(--azul)', GradientType=1 );
+}
+	header a.logo{
+		background-color: var(--vermelho);
+		padding: 6px 0;
+		display: flex;
+		align-items: center;
+		/*justify-content: center;*/
+		text-decoration: none;
+	}
+		header a.logo figure{
+			margin: 0;
+		}
+			header a.logo figure img{
+				width: 100%;
+				max-width: 60px;
+				display: block;
+				margin: 0 auto;
+			}
+		header a.logo h1{
+			margin: 0;
+			color: #fff;
+			font-weight: 100;
+			font-size: 28px;
+			padding-left: 14px;
+		}
+	header .logout-menu{
+		display: block;
+		height: 100%;
+		text-align: right;
+		background-color: var(--azul);
+		padding: 17px 0;
+	}
+		header .logout-menu a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 15px;
+			font-weight: 100;
+			text-transform: lowercase;
+		}
+
+/* header */
+
+/* footer */
+
+footer{
+	
+}
+	footer .rodape{
+		display: flex !important;
+		justify-content: space-between;
+	}
+		footer .rodape p{
+			margin: 0;
+			font-size: 14px;
+			color: #747474;
+			font-style: italic;
+		}
+
+/* footer */
+
+/* geral */
+
+.row{
+	margin: 0 !important;
+}
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9{
+	padding: 0 !important;
+}
+
+.full-container{
+	width: 100%;
+	max-width: 1450px;
+	margin: 0 auto;
+}
+
+.hidden{
+	display: none;
+}
+
+.sidebar{
+	padding: 15px 0;
+}
+	.sidebar .user-info{
+		display: flex;
+		align-items: center;
+	}
+		.sidebar .user-info span{}
+			.sidebar .user-info span img{}
+			.sidebar .user-info span p{
+				margin: 0;
+				font-size: 13px;
+				display: block;
+			}
+		.sidebar .user-info span.user-image{}
+		.sidebar .user-info span.user-content{
+			padding-left: 10px;
+		}
+	.sidebar nav.sidebar-content{
+		margin-top: 18px;
+	}
+		.sidebar nav.sidebar-content a{
+			display: block;
+			text-decoration: none;
+			color: #000;|
+		}
+
+section.content-sction{}
+	section.content-sction form.search-form{}
+		section.content-sction form.search-form input{}
+		section.content-sction form.search-form input[type="submit"]{}
+	section.content-sction form.filter-form{}
+		section.content-sction form.filter-form label{}
+		section.content-sction form.filter-form select{}
+		section.content-sction form.filter-form input[type="submit"]{}
+	section.content-sction table{}
+		section.content-sction table tr{}
+			section.content-sction table tr th{}
+		section.content-sction table tr.car-category-name{}
+			section.content-sction table tr.car-category-name th{}
+	section.content-sction .paginator{}
+		section.content-sction .paginator ul{}
+			section.content-sction .paginator ul li{}
+				section.content-sction .paginator ul li a{}
+
+/* geral */
+
+/* media query */
+/* media query 

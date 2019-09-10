@@ -1,0 +1,124 @@
+/* index css */
+main{}
+	main aside.sidebar{}
+		main aside.sidebar .user-info{}
+			main aside.sidebar .user-info span{}
+				main aside.sidebar .user-info span img{}
+				main aside.sidebar .user-info span p{}
+			main aside.sidebar .user-info span.user-image{}
+			main aside.sidebar .user-info span.user-content{}
+		main aside.sidebar nav.sidebar-content{}
+			main aside.sidebar nav.sidebar-content a{}
+	main section.content-section{
+		padding: 15px 0;
+	}
+		main section.content-section form.search-form{
+			display: flex;
+			position: relative;
+		}
+		main section.content-section form.search-form::before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			background-image: url(../images/search.svg);
+			background-size: 20px;
+			background-position: center;
+			background-repeat: no-repeat;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: 70px;
+			height: 100%;
+			z-index: -1;
+			background-color: #eaeaea;
+		}
+			main section.content-section form.search-form input{
+				/* max-width: 900px; */
+				width: 100%;
+				padding: 7px 15px;
+				border: 1px solid #eaeaea;
+				border-right: none;
+				outline: none;
+			}
+			main section.content-section form.search-form input[type="submit"]{
+				max-width: 70px;
+				padding: 0;
+				background-color: transparent;
+				border: 1px solid #eaeaea;
+				border-left: none;
+			}
+		main section.content-section form.filter-form{}
+			main section.content-section form.filter-form label{}
+			main section.content-section form.filter-form select{}
+			main section.content-section form.filter-form input[type="submit"]{}
+		main section.content-section table{
+			width: 100%;
+		}
+			main section.content-section table tr{}
+				main section.content-section table tr th{
+					border: 1px solid #eaeaea;
+					padding: 10px 15px;
+					font-weight: 400;
+				}
+					main section.content-section table tr th a{
+						color: #565656;
+						text-decoration: none;
+						-webkit-transition: ease-in .1s;
+						-moz-transition: ease-in .1s;
+						-ms-transition: ease-in .1s;
+						-o-transition: ease-in .1s;
+						transition: ease-in .1s;
+							}
+					main section.content-section table tr th a:hover{
+						color: #000;
+					}
+			main section.content-section table tr.car-category-name{}
+				main section.content-section table tr.car-category-name th{
+					background-color: #eaeaea;
+					font-weight: 700;
+				}
+					main section.content-section table tr.car-category-name th a{
+
+					}
+		main section.content-section .paginator{}
+			main section.content-section .paginator ul{
+				padding: 0;
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				padding: 14px 0;
+			}
+				main section.content-section .paginator ul li{
+					width: 25px;
+					height: 26px;
+					text-align: center;
+					margin: 0 3px;
+				}
+					main section.content-section .paginator ul li a{
+						border: 1px solid var(--vermelho);
+						display: block;
+						color: var(--vermelho);
+						text-decoration: none;
+						-webkit-transition: ease-in .1s;
+						-moz-transition: ease-in .1s;
+						-ms-transition: ease-in .1s;
+						-o-transition: ease-in .1s;
+						transition: ease-in .1s;
+					}
+					main section.content-section .paginator ul li a:hover{
+						color: #fff;
+						background-color: var(--vermelho);
+					}
+					main section.content-section .paginator ul li a.arrow{
+						border: none;
+					}
+					main section.content-section .paginator ul li a.arrow:hover{
+						background-color: transparent;
+					}
+						main section.content-section .paginator ul li a img{
+							width: 100%;
+							max-width: 14px;
+						}
