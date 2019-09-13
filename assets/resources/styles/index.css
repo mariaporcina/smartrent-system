@@ -1,22 +1,36 @@
 /* index css */
-main{}
-	main aside.sidebar{}
-		main aside.sidebar .user-info{}
-			main aside.sidebar .user-info span{}
-				main aside.sidebar .user-info span img{}
-				main aside.sidebar .user-info span p{}
-			main aside.sidebar .user-info span.user-image{}
-			main aside.sidebar .user-info span.user-content{}
-		main aside.sidebar nav.sidebar-content{}
-			main aside.sidebar nav.sidebar-content a{}
-	main section.content-section{
-		padding: 15px 0;
+main.index-main{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
+	background: -webkit-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
+	background: -o-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
+	background: -ms-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='var(--azul)', GradientType=1 );
+}
+	main.index-main aside.sidebar{
+
 	}
-		main section.content-section form.search-form{
+		main.index-main aside.sidebar .user-info{}
+			main.index-main aside.sidebar .user-info span{}
+				main.index-main aside.sidebar .user-info span img{}
+				main.index-main aside.sidebar .user-info span p{}
+			main.index-main aside.sidebar .user-info span.user-image{}
+			main.index-main aside.sidebar .user-info span.user-content{}
+		main.index-main aside.sidebar nav.sidebar-content{}
+			main.index-main aside.sidebar nav.sidebar-content a{}
+	main.index-main section.content-section{
+		padding: 15px 0 15px 20px;
+		background-color: #fff;
+	}
+		main.index-main section.content-section .filter-title{
+			margin: 10px 0 2px;
+		}
+		main.index-main section.content-section form.search-form{
 			display: flex;
 			position: relative;
 		}
-		main section.content-section form.search-form::before{
+		main.index-main section.content-section form.search-form::before{
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -35,7 +49,7 @@ main{}
 			z-index: -1;
 			background-color: #eaeaea;
 		}
-			main section.content-section form.search-form input{
+			main.index-main section.content-section form.search-form input{
 				/* max-width: 900px; */
 				width: 100%;
 				padding: 7px 15px;
@@ -43,27 +57,56 @@ main{}
 				border-right: none;
 				outline: none;
 			}
-			main section.content-section form.search-form input[type="submit"]{
+			main.index-main section.content-section form.search-form input[type="submit"]{
 				max-width: 70px;
 				padding: 0;
 				background-color: transparent;
 				border: 1px solid #eaeaea;
 				border-left: none;
 			}
-		main section.content-section form.filter-form{}
-			main section.content-section form.filter-form label{}
-			main section.content-section form.filter-form select{}
-			main section.content-section form.filter-form input[type="submit"]{}
-		main section.content-section table{
-			width: 100%;
+		main.index-main section.content-section form.filter-form{
+			display: flex;
+			align-items: center;
+			height: 33px;
 		}
-			main section.content-section table tr{}
-				main section.content-section table tr th{
+			main.index-main section.content-section form.filter-form label{
+				display: block;
+				margin: 0 0;
+				flex-grow: 1;
+			}
+			main.index-main section.content-section form.filter-form select{
+				display: block;
+				border: 1px solid #eaeaea;
+				color: #4b4b4b;
+				width: 100%;
+				padding: 4px 8px;
+				outline: none;
+				max-width: 175px;
+				flex-grow: 1;
+				margin-right: 18px;
+			}
+			main.index-main section.content-section form.filter-form input[type="submit"]{
+				border: none;
+				background-color: var(--azul);
+				color: #fff;
+				text-transform: lowercase;
+				padding: 5px 0;
+				width: 100%;
+				max-width: 120px;
+				margin: 10px 0 10px auto;
+				display: block;
+			}
+		main.index-main section.content-section table{
+			width: 100%;
+			margin: 30px 0 0;
+		}
+			main.index-main section.content-section table tr{}
+				main.index-main section.content-section table tr th{
 					border: 1px solid #eaeaea;
 					padding: 10px 15px;
 					font-weight: 400;
 				}
-					main section.content-section table tr th a{
+					main.index-main section.content-section table tr th a{
 						color: #565656;
 						text-decoration: none;
 						-webkit-transition: ease-in .1s;
@@ -72,32 +115,32 @@ main{}
 						-o-transition: ease-in .1s;
 						transition: ease-in .1s;
 							}
-					main section.content-section table tr th a:hover{
+					main.index-main section.content-section table tr th a:hover{
 						color: #000;
 					}
-			main section.content-section table tr.car-category-name{}
-				main section.content-section table tr.car-category-name th{
+			main.index-main section.content-section table tr.car-category-name{}
+				main.index-main section.content-section table tr.car-category-name th{
 					background-color: #eaeaea;
 					font-weight: 700;
 				}
-					main section.content-section table tr.car-category-name th a{
+					main.index-main section.content-section table tr.car-category-name th a{
 
 					}
-		main section.content-section .paginator{}
-			main section.content-section .paginator ul{
+		main.index-main section.content-section .paginator{}
+			main.index-main section.content-section .paginator ul{
 				padding: 0;
 				list-style: none;
 				display: flex;
 				justify-content: center;
 				padding: 14px 0;
 			}
-				main section.content-section .paginator ul li{
+				main.index-main section.content-section .paginator ul li{
 					width: 25px;
 					height: 26px;
 					text-align: center;
 					margin: 0 3px;
 				}
-					main section.content-section .paginator ul li a{
+					main.index-main section.content-section .paginator ul li a{
 						/*border: 1px solid var(--vermelho);*/
 						display: block;
 						color: var(--vermelho);
@@ -108,11 +151,11 @@ main{}
 						-o-transition: ease-in .1s;
 						transition: ease-in .1s;
 					}
-					main section.content-section .paginator ul li a:hover{
+					main.index-main section.content-section .paginator ul li a:hover{
 						color: #fff;
 						background-color: var(--vermelho);
 					}
-					main section.content-section .paginator ul li a.arrow{
+					main.index-main section.content-section .paginator ul li a.arrow{
 						border: none;
 						background-size: 15px;
 						background-repeat: no-repeat;
@@ -120,24 +163,24 @@ main{}
 						height: 100%;
 						background-position: center;
 					}
-					main section.content-section .paginator ul li a.arrow.left-arrow{
+					main.index-main section.content-section .paginator ul li a.arrow.left-arrow{
 						background-image: url(../images/left.svg);
 					}
-					main section.content-section .paginator ul li a.arrow.left-arrow:hover{
+					main.index-main section.content-section .paginator ul li a.arrow.left-arrow:hover{
 						background-color: var(--vermelho);
 						background-image: url(../images/left-w.svg);
 					}
-					main section.content-section .paginator ul li a.arrow.right-arrow{
+					main.index-main section.content-section .paginator ul li a.arrow.right-arrow{
 						background-image: url(../images/right.svg);
 					}
-					main section.content-section .paginator ul li a.arrow.right-arrow:hover{
+					main.index-main section.content-section .paginator ul li a.arrow.right-arrow:hover{
 						background-color: var(--vermelho);
 						background-image: url(../images/right-w.svg);
 					}
-					main section.content-section .paginator ul li a.arrow:hover{
+					main.index-main section.content-section .paginator ul li a.arrow:hover{
 						background-color: transparent;
 					}
-						main section.content-section .paginator ul li a img{
+						main.index-main section.content-section .paginator ul li a img{
 							width: 100%;
 							max-width: 14px;
 						}
