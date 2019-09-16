@@ -7,14 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/resources/styles/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css">
-
-	<!-- SCRIPT -->
-	<script type="text/javascript" src="assets/resources/scripts/commom.js"></script>
-	<script type="text/javascript" src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- SLICK -->
+	<link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick-theme.css"/>
 
 	<!-- FAVICON -->
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/> -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/resources/images/favicon.ico"/>
 
 	<title>Projeto web III</title>
 </head>
@@ -23,15 +22,16 @@
 		<div class="full-container">
 			<div class="row">
 				<div class="col-sm-3">
-					<a href="#" class="logo">
+					<a href="http://localhost/smartrent-system/" class="logo">
 						<figure>
-							<img src="assets/resources/images/logo.png" alt="Logo">
+							<img src="assets/resources/images/logo2.png" alt="Logo">
 						</figure>
+						<h1>Smart Rent</h1>
 					</a>
 				</div>
 				<div class="col-sm-9">
 					<div class="logout-menu">
-						<a href="#">Sair</a>
+						<a href="http://localhost/smartrent-system/login">Logout</a>
 					</div>
 				</div>
 			</div>
@@ -41,33 +41,61 @@
 		<div class="full-container">
 			<div class="row">
 				<div class="col-sm-5">
-					<figure class="vehicle-image">
-						<img src="assets/resources/images/" alt="Imagem do carro">
-					</figure>
+					<div class="slider">
+						<figure class="vehicle-image">
+							<img src="assets/resources/images/carro.jpg" alt="Imagem do carro">
+						</figure>
+						<figure class="vehicle-image">
+							<img src="assets/resources/images/carro2.jpg" alt="Imagem do carro">
+						</figure>
+					</div>
 				</div>
 				<div class="col-sm-7">
 					<div class="vehicle-info">
-						<p class="vehicle-status">Disponível para locação</p>
-						<p class="vehicle-name">Chevrolet Epic</p>
-						<p class="vehicle-brand">Chevrolet</p>
-						<p class="vehicle-type">Sedan</p>
-						<p class="vehicle-model">2015</p>
+						<p class="vehicle-status available">Disponível para locação</p>
+						<p class="vehicle-name">Fiat Palio 2019</p>
+						<p class="vehicle-brand">Fiat</p>
+						<p class="vehicle-type">Compacto</p>
+						<p class="vehicle-model">2019</p>
 						<p class="vehicle-power">1.8</p>
 						<p class="vehicle-color">Branco</p>
 						<p class="vehicle-group">Classe A</p>
+						<p class="vehicle-price">R$128,00/dia</p>
 						<span class="rent-button">
 							<a href="#">Alugar</a>
 						</span>
 					</div>
 				</div>
 			</div>
+			<div class="description">
+				<h4>Mais sobre o Fiat Palio</h4>
+				<ul>
+					<li>Ar-condicionado</li>
+					<li>Quatro portas</li>
+					<li>Direção elétrica</li>
+					<li>Retrovisor retrátil</li>
+					<li>Econômico</li>
+				</ul>
+			</div>
+			<!-- <span class="rent-button">
+				<a href="#">Alugar</a>
+			</span> -->
 		</div>
 	</main>
 	<footer>
 		<div class="full-container">
-			<p>Thank you for trust in Smart Rent.</p>
-			<p>Versão 1.0</p>
+			<div class="rodape">
+				<p>Thank you, for trust in Smart Rent.</p>
+				<p>Versão 1.0</p>
+			</div>
 		</div>
 	</footer>
+
+	<!-- SCRIPT -->
+	<script type="text/javascript" src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+	<script type="text/javascript" src="assets/resources/scripts/commom.js"></script>
+
 </body>
 </html>

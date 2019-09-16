@@ -1,16 +1,121 @@
 /* single css */
-main.main-single{}
-	main.main-single figure.vehicle-image{}
-		main.main-single figure.vehicle-image img{}
-	main.main-single .vehicle-info{}
-		main.main-single .vehicle-info p{}
+main.main-single{
+	padding: 40px 0;
+	height: 100vh;
+}
+	main.main-single figure.vehicle-image{
+		height: 328px;
+		outline: none;
+		margin: 0;
+	}
+		main.main-single figure.vehicle-image img{
+			height: -webkit-fill-available;
+			margin: 0 auto;
+		}
+	main.main-single .vehicle-info{
+		padding: 0 30px;
+	}
+		main.main-single .vehicle-info p{
+			margin: 0;
+		}
 		main.main-single .vehicle-info p.vehicle-status{}
-		main.main-single .vehicle-info p.vehicle-name{}
+		main.main-single .vehicle-info p.vehicle-status.maintenance{
+			color: var(--gray);
+		}
+		main.main-single .vehicle-info p.vehicle-status.unavailable{
+			color: var(--danger);
+		}
+		main.main-single .vehicle-info p.vehicle-status.available{
+			color: var(--green);
+		}
+		main.main-single .vehicle-info p.vehicle-name{
+			font-size: 40px;
+			font-weight: 500;
+		}
 		main.main-single .vehicle-info p.vehicle-brand{}
 		main.main-single .vehicle-info p.vehicle-type{}
 		main.main-single .vehicle-info p.vehicle-model{}
 		main.main-single .vehicle-info p.vehicle-power{}
 		main.main-single .vehicle-info p.vehicle-color{}
 		main.main-single .vehicle-info p.vehicle-group{}
-		main.main-single .vehicle-info span.rent-button{}
-			main.main-single .vehicle-info span.rent-button a{}
+		main.main-single .vehicle-info p.vehicle-price{
+			font-size: 30px;
+			font-weight: 600;
+		}
+		main.main-single .vehicle-info span.rent-button{
+			background-color: var(--vermelho);
+			display: block;
+			max-width: 300px;
+			text-align: center;
+			margin: 20px 0 0;
+		}
+			main.main-single .vehicle-info span.rent-button a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				font-size: 30px;
+				text-transform: uppercase;
+				font-weight: 100;
+				padding: 4px 0;
+			}
+	main.main-single .description{
+		margin: 50px 0 40px;
+		border-top: 3px solid #000;
+		padding: 15px 0 0;
+	}
+		main.main-single .description h4{}
+		main.main-single .description p{}
+		main.main-single .description ul{
+			list-style: none;
+			padding-left: 15px;
+		}
+			main.main-single .description ul li{
+				position: relative;
+				padding-left: 25px;
+			}
+			main.main-single .description ul li::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 20px;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			main.main-single .description ul li:nth-child(1)::before{
+				background-image: url(../images/air.svg);
+			}
+			main.main-single .description ul li:nth-child(2)::before{
+				background-image: url(../images/door.svg);
+			}
+			main.main-single .description ul li:nth-child(3)::before{
+				background-image: url(../images/wheel.svg);
+			}
+			main.main-single .description ul li:nth-child(4)::before{
+				background-image: url(../images/mirror.svg);
+			}
+			main.main-single .description ul li:nth-child(5)::before{
+				background-image: url(../images/coin.svg);
+			}
+
+main.main-single .slick-dots li {
+	margin: 0 2px;
+}
+main.main-single .slick-dots li button:before{
+	font-size: 10px;
+}
+main.main-single .slick-dots {
+    bottom: -32px;
+    padding: 0 0 4px;
+    background-color: #dbdbdb;
+}
+
+/*#2488af*/

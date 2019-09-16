@@ -40,7 +40,7 @@ main.login-main{
 			main.login-main .login .login-content-text p{
 				margin: 0;
 			}
-		main.login-main .login form.login-form{
+		main.login-main .login .login-form{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -48,15 +48,23 @@ main.login-main{
 			padding: 0 30px;
 			background-color: #fff;
 		}
-			main.login-main .login form.login-form input{
-				padding: 7px 15px;
-				margin: 6px 0;
-				border: 1px solid #ccc;
-				outline: none;
+			main.login-main .login .login-form form{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
-			main.login-main .login form.login-form input[type="submit"]{
-				border: none;
-				background-color: var(--vermelho);
-				color: #fff;
-				max-width: 100px;
+				main.login-main .login .login-form form input{
+					padding: 7px 15px;
+					margin: 6px 0;
+					border: 1px solid #ccc;
+					outline: none;
+				}
+				main.login-main .login .login-form form input[type="submit"]{
+					border: none;
+					background-color: var(--vermelho);
+					color: #fff;
+					max-width: 100px;
+				}
+			main.login-main .login .login-form a{
+				
 			}
