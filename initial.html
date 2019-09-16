@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/resources/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/resources/images/favicon.ico"/>
+
+	<title>Projeto web III</title>
+</head>
+<body>
+	<header>
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://localhost/smartrent-system/" class="logo">
+						<figure>
+							<img src="assets/resources/images/logo2.png" alt="Logo">
+						</figure>
+						<h1>Smart Rent</h1>
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<div class="logout-menu">
+						<a href="http://localhost/smartrent-system/login">Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="initial-main">
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<!-- sidebar -->
+					<aside class="sidebar">
+						<div class="user-info">
+							<span class="user-image">
+								<img src="assets/resources/images/user.svg" alt="Imagem usuário">
+							</span>
+							<span class="user-content">
+								<p>José da Silva</p>
+								<p>josedasilva@gmail.com</p>
+							</span>
+						</div>
+						<nav class="sidebar-content">
+							<a href="http://localhost/smartrent-system/">Lista de carros</a>
+							<a href="#">Histórico</a>
+							<a href="#">Meus veículos</a>
+							<a href="#">Relatório</a>
+						</nav>
+					</aside>
+				</div>
+				<div class="col-sm-9">
+					<section class="content-section">
+						<h6 class="hidden">Seção da lista de veiculos</h6>
+						<div class="word-key-filter">
+							<h4 class="filter-title">Buscar por palavra-chave</h4>
+							<form class="search-form">
+								<input type="text" placeholder="Palavra-chave">
+								<input type="submit" value=" ">
+							</form>
+						</div>
+						<div class="select-filter">
+							<h4 class="filter-title">Filtrar</h4>
+							<form class="filter-form">
+								<label for="color-filter">Cor</label>
+								<select name="color" id="color-filter">
+									<option value="Todas">Todas</option>
+									<option value="Preto">Preto</option>
+									<option value="Branco">Branco</option>
+									<option value="Prata">Prata</option>
+								</select>
+								<label for="type-filter">Tipo</label>
+								<select name="type" id="type-filter">
+									<option value="Todos">Todos</option>
+									<option value="Sedan">Sedan</option>
+									<option value="Compacto">Compacto</option>
+									<option value="SUV">SUV</option>
+								</select>
+								<label for="brand-filter">Marca</label>
+								<select name="brand" id="brand-filter">
+									<option value="Todas">Todas</option>
+									<option value="Chevrolet">Chevrolet</option>
+									<option value="Fiat">Fiat</option>
+									<option value="Ford">Ford</option>
+								</select>
+								<label for="group-filter">Grupo</label>
+								<select name="group" id="group-filter">
+									<option value="Todos">Todos</option>
+									<option value="Classe-A">Classe A</option>
+									<option value="Classe-B">Classe B</option>
+									<option value="Classe-C">Classe C</option>
+								</select>
+								<label for=""></label>
+								<input type="submit" value="Buscar">
+							</form>
+						</div>
+						<table>
+							<tr class="car-category-name">
+								<th>Marca</th>
+								<th>Grupo</th>
+								<th>Tipo</th>
+								<th>Nome</th>
+								<th>Modelo</th>
+								<th>Cor</th>
+								<th>Potência do motor</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+							<tr>
+								<th>Chevrolet</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Chevrolet Epic</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Disponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Ford</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Ford Focus</th>
+								<th>2015</th>
+								<th>Prata</th>
+								<th>1.8</th>
+								<th>Indisponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Fiat</th>
+								<th>Classe A</th>
+								<th>Picape</th>
+								<th>Fiat Strada</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Em manutenção</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Chevrolet</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Chevrolet Epic</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Disponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Ford</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Ford Focus</th>
+								<th>2015</th>
+								<th>Prata</th>
+								<th>1.8</th>
+								<th>Indisponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Fiat</th>
+								<th>Classe A</th>
+								<th>Picape</th>
+								<th>Fiat Strada</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Em manutenção</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Chevrolet</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Chevrolet Epic</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Disponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Ford</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Ford Focus</th>
+								<th>2015</th>
+								<th>Prata</th>
+								<th>1.8</th>
+								<th>Indisponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Fiat</th>
+								<th>Classe A</th>
+								<th>Picape</th>
+								<th>Fiat Strada</th>
+								<th>2015</th>
+								<th>Branco</th>
+								<th>1.8</th>
+								<th>Em manutenção</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+							<tr>
+								<th>Ford</th>
+								<th>Classe A</th>
+								<th>Sedan</th>
+								<th>Ford Focus</th>
+								<th>2015</th>
+								<th>Prata</th>
+								<th>1.8</th>
+								<th>Indisponível para locação</th>
+								<th><a href="http://localhost/smartrent-system/single">Visualizar</a></th>
+							</tr>
+						</table>
+						<div class="paginator">
+							<ul>
+								<li><a href="#" class="arrow left-arrow"></a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#" class="arrow right-arrow"></a></li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="full-container">
+			<div class="rodape">
+				<p>Thank you, for trust in Smart Rent.</p>
+				<p>Versão 1.0</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPT -->
+	<script type="text/javascript" src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+	<script type="text/javascript" src="assets/resources/scripts/commom.js"></script>
+	
+</body>
+</html>
