@@ -1,0 +1,43 @@
+/* company report css */
+
+main.report-main{}
+	main.report-main section.report-content-section{
+		background-color: #fff;
+		padding: 15px 0 15px 20px;
+		min-height: 100vh;
+	}
+		main.report-main section.report-content-section .filter{}
+			main.report-main section.report-content-section .filter h4.filter-title{}
+			main.report-main section.report-content-section .filter form.period-filter{}
+				main.report-main section.report-content-section .filter form.period-filter label{}
+				main.report-main section.report-content-section .filter form.period-filter input{
+					border: 1px solid #eaeaea;
+					outline: none;
+					padding: 5px 10px;
+					margin-right: 10px;
+				}
+				main.report-main section.report-content-section .filter form.period-filter input[type="submit"]{
+					background-color: var(--vermelho);
+					color: #fff;
+					text-transform: lowercase;
+					border-color: var(--vermelho);
+				}
+		main.report-main section.report-content-section .report-filter{}
+			main.report-main section.report-content-section .report-filter h5{
+				margin: 20px 0 0;
+				font-size: 30px;
+			}
+		main.report-main section.report-content-section table{
+			width: 100%;
+			margin: 30px 0 0;
+		}
+			main.report-main section.report-content-section table tr{}
+				main.report-main section.report-content-section table tr th{
+					font-weight: 300;
+					padding: 8px 10px;
+					border-bottom: 1px solid #eaeaea;
+				}
+			main.report-main section.report-content-section table tr.category-name{}
+				main.report-main section.report-content-section table tr.category-name th{
+					font-weight: 600;
+				}

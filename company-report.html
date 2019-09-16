@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</header>
-	<main class="initial-main gradient-brackground">
+	<main class="company-report-main report-main gradient-brackground">
 		<div class="full-container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -58,52 +58,23 @@
 					</aside>
 				</div>
 				<div class="col-sm-9">
-					<section class="content-section">
+					<section class="report-content-section">
 						<h6 class="hidden">Seção da lista de veiculos</h6>
-						<div class="word-key-filter">
-							<h4 class="filter-title">Buscar por palavra-chave</h4>
-							<form class="search-form">
-								<input type="text" placeholder="Palavra-chave">
-								<input type="submit" value=" ">
+						<div class="filter">
+							<h4 class="filter-title">Filtrar por período</h4>
+							<form class="period-filter">
+								<label for="from-date-filter">De:</label>
+								<input type="date" id="from-date-filter">
+								<label for="to-date-filter">Até:</label>
+								<input type="date" id="to-date-filter">
+								<input type="submit" value="Gerar relatório">
 							</form>
 						</div>
-						<div class="select-filter">
-							<h4 class="filter-title">Filtrar</h4>
-							<form class="filter-form">
-								<label for="color-filter">Cor</label>
-								<select name="color" id="color-filter">
-									<option value="Todas">Todas</option>
-									<option value="Preto">Preto</option>
-									<option value="Branco">Branco</option>
-									<option value="Prata">Prata</option>
-								</select>
-								<label for="type-filter">Tipo</label>
-								<select name="type" id="type-filter">
-									<option value="Todos">Todos</option>
-									<option value="Sedan">Sedan</option>
-									<option value="Compacto">Compacto</option>
-									<option value="SUV">SUV</option>
-								</select>
-								<label for="brand-filter">Marca</label>
-								<select name="brand" id="brand-filter">
-									<option value="Todas">Todas</option>
-									<option value="Chevrolet">Chevrolet</option>
-									<option value="Fiat">Fiat</option>
-									<option value="Ford">Ford</option>
-								</select>
-								<label for="group-filter">Grupo</label>
-								<select name="group" id="group-filter">
-									<option value="Todos">Todos</option>
-									<option value="Classe-A">Classe A</option>
-									<option value="Classe-B">Classe B</option>
-									<option value="Classe-C">Classe C</option>
-								</select>
-								<label for=""></label>
-								<input type="submit" value="Buscar">
-							</form>
+						<div class="report-filter">
+							<h5>Resultado referente ao período entre os dias: "16/06/2019" e "16/07/2019"</h5>
 						</div>
 						<table>
-							<tr class="car-category-name">
+							<tr class="category-name">
 								<th>Marca</th>
 								<th>Grupo</th>
 								<th>Tipo</th>
@@ -125,7 +96,6 @@
 								<th>1.8</th>
 								<th>R$128,00/dia</th>
 								<th>Disponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-tenancy">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Ford</th>
@@ -137,7 +107,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Indisponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Fiat</th>
@@ -149,7 +118,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Em manutenção</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Chevrolet</th>
@@ -161,7 +129,6 @@
 								<th>1.8</th>
 								<th>R$128,00/dia</th>
 								<th>Disponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-tenancy">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Ford</th>
@@ -173,7 +140,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Indisponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Fiat</th>
@@ -185,7 +151,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Em manutenção</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Chevrolet</th>
@@ -197,7 +162,6 @@
 								<th>1.8</th>
 								<th>R$128,00/dia</th>
 								<th>Disponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-tenancy">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Ford</th>
@@ -209,7 +173,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Indisponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Fiat</th>
@@ -221,7 +184,6 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Em manutenção</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 							<tr>
 								<th>Ford</th>
@@ -233,20 +195,8 @@
 								<th>1.8</th>
 								<th>R$120,00/dia</th>
 								<th>Indisponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-devolution">Visualizar</a></th>
 							</tr>
 						</table>
-						<div class="paginator">
-							<ul>
-								<li><a href="#" class="arrow left-arrow"></a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li><a href="#" class="arrow right-arrow"></a></li>
-							</ul>
-						</div>
 					</section>
 				</div>
 			</div>

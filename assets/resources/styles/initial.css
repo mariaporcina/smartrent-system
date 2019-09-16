@@ -1,5 +1,6 @@
 /* index css */
-main.initial-main{
+
+.gradient-brackground{
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
 	background: -webkit-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
@@ -7,6 +8,10 @@ main.initial-main{
 	background: -ms-linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
 	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, var(--azul) 0%, var(--azul) 50%, #fff 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='var(--azul)', GradientType=1 );
+}
+
+main.initial-main{
+	
 }
 	main.initial-main aside.sidebar{
 
@@ -104,12 +109,12 @@ main.initial-main{
 			main.initial-main section.content-section table tr{}
 				main.initial-main section.content-section table tr th{
 					border: 1px solid #eaeaea;
-					padding: 10px 15px;
+					padding: 10px 8px;
 					font-weight: 400;
 				}
 					main.initial-main section.content-section table tr th a{
-						color: #565656;
-						text-decoration: none;
+						color: var(--red);
+						/*text-decoration: none;*/
 						-webkit-transition: ease-in .1s;
 						-moz-transition: ease-in .1s;
 						-ms-transition: ease-in .1s;
@@ -117,7 +122,7 @@ main.initial-main{
 						transition: ease-in .1s;
 							}
 					main.initial-main section.content-section table tr th a:hover{
-						color: var(--red);
+						/*color: #000;*/
 					}
 			main.initial-main section.content-section table tr.car-category-name{}
 				main.initial-main section.content-section table tr.car-category-name th{
