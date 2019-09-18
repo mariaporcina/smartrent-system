@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/resources/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/x-icon" href="http://hcdesenvolvimentos.com/mp/favicon.ico"/>
+
+	<title>Projeto web III</title>
+</head>
+<body>
+	<header>
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://localhost/smartrent-system/initial" class="logo">
+						<figure>
+							<img src="http://hcdesenvolvimentos.com/mp/logo2.png" alt="Logo">
+						</figure>
+						<h1>Smart Rent</h1>
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<div class="logout-menu">
+						<a href="http://localhost/smartrent-system/">Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="car-registration-main gradient-brackground">
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<!-- sidebar -->
+					<aside class="sidebar">
+						<div class="user-info">
+							<span class="user-image">
+								<img src="http://hcdesenvolvimentos.com/mp/user.svg" alt="Imagem usuário">
+							</span>
+							<span class="user-content">
+								<p>José da Silva</p>
+								<p>josedasilva@gmail.com</p>
+							</span>
+						</div>
+						<nav class="sidebar-content">
+							<a href="http://localhost/smartrent-system/initial" class="list">Lista de carros</a>
+							<a href="http://localhost/smartrent-system/car-registration" class="car-registration">Registrar novo carro</a>
+							<a href="http://localhost/smartrent-system/company-report" class="company-report">Relatório da empresa</a>
+							<a href="http://localhost/smartrent-system/car-report" class="car-report">Relatório de um carro</a>
+						</nav>
+					</aside>
+				</div>
+				<div class="col-sm-9">
+					<section class="car-registration-section">
+						<h6 class="hidden">Seção de registro de veiculos</h6>
+						<div class="car-registration">
+							<h4 class="registration-title">Registrar novo veículo</h4>
+							<form class="car-registration-form">
+								<label for="lisense-plate">Placa</label>
+								<input type="text" name="lisense-plate" id="lisense-plate" placeholder="ABC1234">
+								<label for="brand">Marca</label>
+								<input type="text" name="brand" id="brand" placeholder="Fiat">
+								<label for="car-name">Nome</label>
+								<input type="text" name="car-name" id="car-name" placeholder="Fiat Palio 2019">
+								<label for="group">Grupo</label>
+								<input type="text" name="group" id="group" placeholder="Classe A">
+								<label for="type">Tipo</label>
+								<input type="text" name="type" id="type" placeholder="Compacto">
+								<label for="model">Modelo</label>
+								<input type="text" name="model" id="model" placeholder="2019">
+								<label for="power">Potência do motor</label>
+								<input type="text" name="power" id="power" placeholder="1.8">
+								<label for="color">Cor</label>
+								<input type="text" name="color" id="color" placeholder="Branco">
+								<label for="price">Preço/dia</label>
+								<input type="text" name="price" id="price" placeholder="128">
+								<label for="car-images" class="car-images">Selecionar imagens do veículo</label>
+								<input type="file" name="car-images" id="car-images" accept="image/png, image/jpg, image/jpeg" multiple>
+								<label for="more-about">Informações extras</label>
+								<textarea name="more-about" id="more-about" placeholder="ar-condicionado|quatro portas..."></textarea>
+								<span class="obs"><em>*Obs: digite as palavras separadas por uma barra em pé(|). Ex: ar-condicionado|quatro portas|direção elétrica</em></span>
+								<input type="submit" value="Registrar">
+							</form>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="full-container">
+			<div class="rodape">
+				<p>Thank you, for trust in Smart Rent.</p>
+				<p>Versão 1.0</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPT -->
+	<script type="text/javascript" src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+	<script type="text/javascript" src="assets/resources/scripts/commom.js"></script>
+	
+</body>
+</html>

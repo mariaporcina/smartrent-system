@@ -1,0 +1,57 @@
+/* car registration css */
+
+main.car-registration-main{}
+	main.car-registration-main section.car-registration-section{
+		/* height: 100%; */
+		background-color: #fff;
+		padding: 15px 0 15px 20px;
+	}
+		main.car-registration-main section.car-registration-section .car-registration{}
+			main.car-registration-main section.car-registration-section .car-registration h4.registration-title{}
+			main.car-registration-main section.car-registration-section .car-registration form.car-registration-form{}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form label{
+					display: block;
+					margin: 10px 0 2px;
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form label.car-images{
+					/*background-color: #a7a7a7;
+					color: #fff;
+					display: inline-block;
+					padding: 7px 15px;
+					cursor: pointer;*/
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form input{
+					display: block;
+					width: 100%;
+					padding: 5px 10px;
+					outline: none;
+					border: 1px solid #eaeaea;
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form input::placeholder,main.car-registration-main section.car-registration-section .car-registration form.car-registration-form textarea:placeholder{
+					color: #bdbdbd;
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form input[type="submit"]{
+					background-color: var(--vermelho);
+					color: #fff;
+					border: none;
+					margin: 15px 0 0;
+					max-width: 180px;
+					text-transform: lowercase;
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form input[type="file"]{
+					/* width: 0px; */
+					/* height: 0px; */
+					/* padding: 0; */
+					/*opacity: 0;
+					overflow: hidden;
+					position: absolute;
+					z-index: -1;*/
+				}
+				main.car-registration-main section.car-registration-section .car-registration form.car-registration-form textarea{
+					display: block;
+					width: 100%;
+					height: 70px;
+					border: 1px solid #eaeaea;
+					padding: 5px 10px;
+					outline: none;
+				}

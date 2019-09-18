@@ -1,0 +1,43 @@
+/* tenancy css */
+
+main.tenancy-main{
+	height: 100vh;
+}
+	main.tenancy-main section.tenancy-section{
+		height: 100%;
+		background-color: #fff;
+		padding: 15px 0 15px 20px;
+	}
+		main.tenancy-main section.tenancy-section .tenancy{}
+			main.tenancy-main section.tenancy-section .tenancy h4.tenancy-title{}
+			main.tenancy-main section.tenancy-section .tenancy form.tenancy-form{}
+				main.tenancy-main section.tenancy-section .tenancy form.tenancy-form label{
+					display: block;
+					margin: 10px 0 3px;
+				}
+				main.tenancy-main section.tenancy-section .tenancy form.tenancy-form input{
+					display: block;
+					width: 100%;
+					padding: 5px 10px;
+					border: 1px solid #eaeaea;
+					outline: none;
+					color: #bdbdbd;
+				}
+				main.tenancy-main section.tenancy-section .tenancy form.tenancy-form input::placeholder{
+					color: #bdbdbd;
+				}
+				main.tenancy-main section.tenancy-section .tenancy form.tenancy-form input[type="submit"]{
+					display: block;
+					max-width: 110px;
+					border: none;
+					background-color: var(--vermelho);
+					color: #fff;
+					margin: 10px 0 0;
+				}
+
+main.tenancy-main .full-container{
+	height: 100%;
+}
+main.tenancy-main .row{
+	height: 100%;
+}

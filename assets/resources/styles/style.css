@@ -11,8 +11,10 @@
 @import url('single.css');
 @import url('initial.css');
 @import url('login.css');
-@import url('user-register.css');
+@import url('user-registration.css');
+@import url('car-registration.css');
 @import url('report.css');
+@import url('tenancy.css');
 
 /* variáveis */
 
@@ -29,9 +31,13 @@ body{
 
 }
 
+body.stop-scroll{
+	overflow: hidden;
+}
+
 body.login-page{
 	height: 100vh;
-	background-image: url(../images/background.png);
+	background-image: url(http://hcdesenvolvimentos.com/mp/background.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -120,15 +126,15 @@ footer{
 	padding: 0 !important;
 }
 
-main.initial-main a.list, main.company-report-main a.company-report, main.car-report-main a.car-report{
+main.initial-main a.list, main.car-registration-main a.car-registration, main.company-report-main a.company-report, main.car-report-main a.car-report{
 	border-bottom: 1px solid #fff !important;
 }
 
 .full-container{
 	width: 100%;
-	/* max-width: 1450px; */
+	max-width: 1450px;
 	margin: 0 auto;
-	padding: 0 35px;
+	/*padding: 0 35px;*/
 }
 
 .hidden{

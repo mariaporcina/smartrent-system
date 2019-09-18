@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/resources/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/x-icon" href="http://hcdesenvolvimentos.com/mp/favicon.ico"/>
+
+	<title>Projeto web III</title>
+</head>
+<body>
+	<header>
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="http://localhost/smartrent-system/initial" class="logo">
+						<figure>
+							<img src="http://hcdesenvolvimentos.com/mp/logo2.png" alt="Logo">
+						</figure>
+						<h1>Smart Rent</h1>
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<div class="logout-menu">
+						<a href="http://localhost/smartrent-system/">Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="tenancy-main gradient-brackground">
+		<div class="full-container">
+			<div class="row">
+				<div class="col-sm-3">
+					<!-- sidebar -->
+					<aside class="sidebar">
+						<div class="user-info">
+							<span class="user-image">
+								<img src="http://hcdesenvolvimentos.com/mp/user.svg" alt="Imagem usuário">
+							</span>
+							<span class="user-content">
+								<p>José da Silva</p>
+								<p>josedasilva@gmail.com</p>
+							</span>
+						</div>
+						<nav class="sidebar-content">
+							<a href="http://localhost/smartrent-system/initial" class="list">Lista de carros</a>
+							<a href="http://localhost/smartrent-system/car-registration" class="car-registration">Registrar novo carro</a>
+							<a href="http://localhost/smartrent-system/company-report" class="company-report">Relatório da empresa</a>
+							<a href="http://localhost/smartrent-system/car-report" class="car-report">Relatório de um carro</a>
+						</nav>
+					</aside>
+				</div>
+				<div class="col-sm-9">
+					<section class="tenancy-section">
+						<h6 class="hidden">Seção de locação de veiculos</h6>
+						<div class="tenancy">
+							<h4 class="tenancy-title">Locar veículo</h4>
+							<form class="tenancy-form">
+								<label for="client-name">Nome</label>
+								<input type="text" name="client-name" id="client-name" placeholder="Nome do cliente">
+								<label for="client-from-date">De:</label>
+								<input type="date" name="client-from-date" id="client-from-date">
+								<label for="client-to-date">Até:</label>
+								<input type="date" name="client-to-date" id="client-to-date">
+								<label for="client-phone">Telefone</label>
+								<input type="tel" name="client-phone" id="client-phone" placeholder="Telefone do cliente">
+								<label for="client-cpf-cnpj">CPF/CNPJ</label>
+								<input type="text" name="client-cpf-cnpj" id="client-cpf-cnpj" placeholder="CPF ou CNPJ do cliente">
+								<input type="submit" value="Locar">
+							</form>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="full-container">
+			<div class="rodape">
+				<p>Thank you, for trust in Smart Rent.</p>
+				<p>Versão 1.0</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPT -->
+	<script type="text/javascript" src="assets/libraries/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+	<script type="text/javascript" src="assets/resources/scripts/commom.js"></script>
+	
+</body>
+</html>

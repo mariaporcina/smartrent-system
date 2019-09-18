@@ -1,7 +1,7 @@
 /* single css */
 main.main-single{
 	padding: 40px 0;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 	main.main-single figure.vehicle-image{
 		height: 328px;
@@ -43,24 +43,42 @@ main.main-single{
 			font-weight: 600;
 		}
 		main.main-single .vehicle-info span{
-
+			display: flex;
+			justify-content: space-between;
 		}
-			main.main-single .vehicle-info span span.buttons{
+			main.main-single .vehicle-info span.buttons{
 				background-color: var(--vermelho);
 				display: block;
-				max-width: 300px;
+				max-width: 350px;
 				text-align: center;
 				margin: 20px 0 0;
+				flex-grow: 1;
 			}
-				main.main-single .vehicle-info span span.buttons a{
+				main.main-single .vehicle-info span.buttons a{
 					text-decoration: none;
 					color: #fff;
 					display: block;
-					font-size: 30px;
+					font-size: 22px;
 					text-transform: uppercase;
 					font-weight: 100;
-					padding: 4px 0;
+					padding: 10px 0;
 				}
+		main.main-single .vehicle-info .edit-button{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: var(--azul);
+			margin-right: 30px;
+		}
+			main.main-single .vehicle-info .edit-button a{
+				color: #fff;
+				padding: 3px 20px;
+				display: block;
+				font-size: 17px;
+				font-weight: 100;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
 	main.main-single .description{
 		margin: 50px 0 40px;
 		border-top: 3px solid #000;
@@ -94,20 +112,86 @@ main.main-single{
 				transform: translateY(-50%);
 			}
 			main.main-single .description ul li:nth-child(1)::before{
-				background-image: url(../images/air.svg);
+				background-image: url(http://hcdesenvolvimentos.com/mp/air.svg);
 			}
 			main.main-single .description ul li:nth-child(2)::before{
-				background-image: url(../images/door.svg);
+				background-image: url(http://hcdesenvolvimentos.com/mp/door.svg);
 			}
 			main.main-single .description ul li:nth-child(3)::before{
-				background-image: url(../images/wheel.svg);
+				background-image: url(http://hcdesenvolvimentos.com/mp/wheel.svg);
 			}
 			main.main-single .description ul li:nth-child(4)::before{
-				background-image: url(../images/mirror.svg);
+				background-image: url(http://hcdesenvolvimentos.com/mp/mirror.svg);
 			}
 			main.main-single .description ul li:nth-child(5)::before{
-				background-image: url(../images/coin.svg);
+				background-image: url(http://hcdesenvolvimentos.com/mp/coin.svg);
 			}
+	main.main-single .pop-up-maintancement{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		z-index: 9;
+		display: none;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		box-shadow: 0 0 13px -9px #000;
+		background-color: rgba(0, 0, 0, 0.56);
+	}
+		main.main-single .pop-up-maintancement .maintancement{
+			background-color: #fff;
+			width: 100%;
+			max-width: 900px;
+			margin: 60px auto 0;
+			height: 100%;
+			max-height: 400px;
+			position: relative;
+			padding: 18px 30px;
+		}
+			main.main-single .pop-up-maintancement .maintancement span.close-pop-up{
+				position: absolute;
+				color: var(--danger);
+				font-size: 21px;
+				line-height: 25px;
+				margin: 6px 15px;
+				right: 0;
+				top: 0;
+				cursor: pointer;
+				border: 2px solid var(--danger);
+				border-radius: 100%;
+				width: 30px;
+				text-align: center;
+				height: 30px;
+			}
+			main.main-single .pop-up-maintancement .maintancement h4{}
+			main.main-single .pop-up-maintancement .maintancement form.maintancement-form{
+				display: flex;
+				flex-direction: column;
+			}
+				main.main-single .pop-up-maintancement .maintancement form.maintancement-form label{
+					margin: 15px 0 3px;
+				}
+				main.main-single .pop-up-maintancement .maintancement form.maintancement-form select{
+					padding: 5px 10px;
+					outline: none;
+				}
+				main.main-single .pop-up-maintancement .maintancement form.maintancement-form input{
+					border: none;
+					background-color: var(--vermelho);
+					color: #fff;
+					max-width: 110px;
+					padding: 5px 0px;
+					margin: 10px 0 0;
+					outline: none;
+				}
+				main.main-single .pop-up-maintancement .maintancement form.maintancement-form textarea{
+					padding: 5px 10px;
+					height: 90px;
+					outline: none;
+				}
+.active-pop-up{
+	display: block !important;
+}
 
 main.main-single .slick-dots li {
 	margin: 0 2px;

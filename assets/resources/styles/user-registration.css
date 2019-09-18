@@ -1,0 +1,70 @@
+/* user registration css */
+
+main.user-registration-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+	main.user-registration-main .small-container{
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	main.user-registration-main .user-registration{
+		box-shadow: 0 0 26px -12px #000000;
+		-webkit-box-shadow: 0 0 26px -12px #000000;
+	}
+		main.user-registration-main .user-registration .user-registration-content{
+			background-color: var(--azul);
+			height: 100%;
+			padding: 80px 65px 150px;
+		}
+		main.user-registration-main .user-registration figure{
+			margin: 0 0 40px;
+		}
+			main.user-registration-main .user-registration figure img{
+				width: 100%;
+				max-width: 120px;
+				display: block;
+				margin: 0 auto;
+			}
+		main.user-registration-main .user-registration .user-registration-content-text{
+			text-align: center;
+			color: #fff;
+		}
+			main.user-registration-main .user-registration .user-registration-content-text h6{
+				font-size: 30px;
+				margin: 0 0 20px;
+			}
+			main.user-registration-main .user-registration .user-registration-content-text p{
+				margin: 0;
+			}
+		main.user-registration-main .user-registration .user-registration-form{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+			padding: 0 30px;
+			background-color: #fff;
+		}
+			main.user-registration-main .user-registration .user-registration-form form{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+				main.user-registration-main .user-registration .user-registration-form form input{
+					padding: 7px 15px;
+					margin: 6px 0;
+					border: 1px solid #ccc;
+					outline: none;
+				}
+				main.user-registration-main .user-registration .user-registration-form form input[type="submit"]{
+					border: none;
+					background-color: var(--azul);
+					color: #fff;
+					max-width: 100px;
+				}
+			main.user-registration-main .user-registration .user-registration-form a{
+				
+			}
