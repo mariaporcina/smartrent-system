@@ -126,7 +126,33 @@ footer{
 	padding: 0 !important;
 }
 
-main.initial-main a.list, main.car-registration-main a.car-registration, main.company-report-main a.company-report, main.car-report-main a.car-report{
+a.go-back{
+	font-size: 17px;
+	position: relative;
+	padding-left: 18px;
+	display: block;
+	margin-bottom: 10px;
+}
+a.go-back::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: block;
+	width: 15px;
+	height: 18px;
+	background-image: url(../images/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 15px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+main.initial-main a.available-list, main.unavailable-main a.unavailable-list, main.maintancement-main a.maintancement-list, main.car-registration-main a.car-registration, main.company-report-main a.company-report, main.car-report-main a.car-report{
 	border-bottom: 1px solid #fff !important;
 }
 

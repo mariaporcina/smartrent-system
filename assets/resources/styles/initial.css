@@ -10,32 +10,32 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='var(--azul)', GradientType=1 );
 }
 
-main.initial-main{
+main.vehicle-list{
 	
 }
-	main.initial-main aside.sidebar{
+	main.vehicle-list aside.sidebar{
 
 	}
-		main.initial-main aside.sidebar .user-info{}
-			main.initial-main aside.sidebar .user-info span{}
-				main.initial-main aside.sidebar .user-info span img{}
-				main.initial-main aside.sidebar .user-info span p{}
-			main.initial-main aside.sidebar .user-info span.user-image{}
-			main.initial-main aside.sidebar .user-info span.user-content{}
-		main.initial-main aside.sidebar nav.sidebar-content{}
-			main.initial-main aside.sidebar nav.sidebar-content a{}
-	main.initial-main section.content-section{
+		main.vehicle-list aside.sidebar .user-info{}
+			main.vehicle-list aside.sidebar .user-info span{}
+				main.vehicle-list aside.sidebar .user-info span img{}
+				main.vehicle-list aside.sidebar .user-info span p{}
+			main.vehicle-list aside.sidebar .user-info span.user-image{}
+			main.vehicle-list aside.sidebar .user-info span.user-content{}
+		main.vehicle-list aside.sidebar nav.sidebar-content{}
+			main.vehicle-list aside.sidebar nav.sidebar-content a{}
+	main.vehicle-list section.content-section{
 		padding: 15px 0 15px 20px;
 		background-color: #fff;
 	}
-		main.initial-main section.content-section .filter-title{
+		main.vehicle-list section.content-section .filter-title{
 			margin: 10px 0 2px;
 		}
-		main.initial-main section.content-section form.search-form{
+		main.vehicle-list section.content-section form.search-form{
 			display: flex;
 			position: relative;
 		}
-		main.initial-main section.content-section form.search-form::before{
+		main.vehicle-list section.content-section form.search-form::before{
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -53,7 +53,7 @@ main.initial-main{
 			height: 100%;
 			background-color: #eaeaea;
 		}
-			main.initial-main section.content-section form.search-form input{
+			main.vehicle-list section.content-section form.search-form input{
 				/* max-width: 900px; */
 				width: 100%;
 				padding: 7px 15px;
@@ -61,7 +61,7 @@ main.initial-main{
 				border-right: none;
 				outline: none;
 			}
-			main.initial-main section.content-section form.search-form input[type="submit"]{
+			main.vehicle-list section.content-section form.search-form input[type="submit"]{
 				max-width: 70px;
 				padding: 0;
 				background-color: transparent;
@@ -69,17 +69,17 @@ main.initial-main{
 				border-left: none;
 				z-index: 1;
 			}
-		main.initial-main section.content-section form.filter-form{
+		main.vehicle-list section.content-section form.filter-form{
 			display: flex;
 			align-items: center;
 			height: 33px;
 		}
-			main.initial-main section.content-section form.filter-form label{
+			main.vehicle-list section.content-section form.filter-form label{
 				display: block;
 				margin: 0 0;
 				flex-grow: 1;
 			}
-			main.initial-main section.content-section form.filter-form select{
+			main.vehicle-list section.content-section form.filter-form select{
 				display: block;
 				border: 1px solid #eaeaea;
 				color: #4b4b4b;
@@ -90,7 +90,7 @@ main.initial-main{
 				flex-grow: 1;
 				margin-right: 18px;
 			}
-			main.initial-main section.content-section form.filter-form input[type="submit"]{
+			main.vehicle-list section.content-section form.filter-form input[type="submit"]{
 				border: none;
 				background-color: var(--vermelho);
 				color: #fff;
@@ -102,17 +102,17 @@ main.initial-main{
 				display: block;
 				outline: none;
 			}
-		main.initial-main section.content-section table{
+		main.vehicle-list section.content-section table{
 			width: 100%;
 			margin: 30px 0 0;
 		}
-			main.initial-main section.content-section table tr{}
-				main.initial-main section.content-section table tr th{
+			main.vehicle-list section.content-section table tr{}
+				main.vehicle-list section.content-section table tr th{
 					border: 1px solid #eaeaea;
 					padding: 10px 8px;
 					font-weight: 400;
 				}
-					main.initial-main section.content-section table tr th a{
+					main.vehicle-list section.content-section table tr th a{
 						color: var(--red);
 						/*text-decoration: none;*/
 						-webkit-transition: ease-in .1s;
@@ -121,32 +121,32 @@ main.initial-main{
 						-o-transition: ease-in .1s;
 						transition: ease-in .1s;
 							}
-					main.initial-main section.content-section table tr th a:hover{
+					main.vehicle-list section.content-section table tr th a:hover{
 						/*color: #000;*/
 					}
-			main.initial-main section.content-section table tr.car-category-name{}
-				main.initial-main section.content-section table tr.car-category-name th{
+			main.vehicle-list section.content-section table tr.car-category-name{}
+				main.vehicle-list section.content-section table tr.car-category-name th{
 					background-color: #eaeaea;
 					font-weight: 700;
 				}
-					main.initial-main section.content-section table tr.car-category-name th a{
+					main.vehicle-list section.content-section table tr.car-category-name th a{
 
 					}
-		main.initial-main section.content-section .paginator{}
-			main.initial-main section.content-section .paginator ul{
+		main.vehicle-list section.content-section .paginator{}
+			main.vehicle-list section.content-section .paginator ul{
 				padding: 0;
 				list-style: none;
 				display: flex;
 				justify-content: center;
 				padding: 14px 0;
 			}
-				main.initial-main section.content-section .paginator ul li{
+				main.vehicle-list section.content-section .paginator ul li{
 					width: 25px;
 					height: 26px;
 					text-align: center;
 					margin: 0 3px;
 				}
-					main.initial-main section.content-section .paginator ul li a{
+					main.vehicle-list section.content-section .paginator ul li a{
 						/*border: 1px solid var(--vermelho);*/
 						display: block;
 						color: var(--vermelho);
@@ -157,11 +157,11 @@ main.initial-main{
 						-o-transition: ease-in .1s;
 						transition: ease-in .1s;
 					}
-					main.initial-main section.content-section .paginator ul li a:hover{
+					main.vehicle-list section.content-section .paginator ul li a:hover{
 						color: #fff;
 						background-color: var(--vermelho);
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow{
+					main.vehicle-list section.content-section .paginator ul li a.arrow{
 						border: none;
 						background-size: 15px;
 						background-repeat: no-repeat;
@@ -169,24 +169,24 @@ main.initial-main{
 						height: 100%;
 						background-position: center;
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow.left-arrow{
+					main.vehicle-list section.content-section .paginator ul li a.arrow.left-arrow{
 						background-image: url(http://hcdesenvolvimentos.com/mp/left.svg);
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow.left-arrow:hover{
+					main.vehicle-list section.content-section .paginator ul li a.arrow.left-arrow:hover{
 						background-color: var(--vermelho);
 						background-image: url(http://hcdesenvolvimentos.com/mp/left-w.svg);
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow.right-arrow{
+					main.vehicle-list section.content-section .paginator ul li a.arrow.right-arrow{
 						background-image: url(http://hcdesenvolvimentos.com/mp/right.svg);
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow.right-arrow:hover{
+					main.vehicle-list section.content-section .paginator ul li a.arrow.right-arrow:hover{
 						background-color: var(--vermelho);
 						background-image: url(http://hcdesenvolvimentos.com/mp/right-w.svg);
 					}
-					main.initial-main section.content-section .paginator ul li a.arrow:hover{
+					main.vehicle-list section.content-section .paginator ul li a.arrow:hover{
 						background-color: transparent;
 					}
-						main.initial-main section.content-section .paginator ul li a img{
+						main.vehicle-list section.content-section .paginator ul li a img{
 							width: 100%;
 							max-width: 14px;
 						}

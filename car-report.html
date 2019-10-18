@@ -5,7 +5,6 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/resources/styles/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css">
 
 	<!-- FAVICON -->
@@ -18,7 +17,7 @@
 		<div class="full-container">
 			<div class="row">
 				<div class="col-sm-3">
-					<a href="http://localhost/smartrent-system/initial" class="logo">
+					<a href="http://localhost/smartrent-system/initial.html" class="logo">
 						<figure>
 							<img src="http://hcdesenvolvimentos.com/mp/logo2.png" alt="Logo">
 						</figure>
@@ -49,10 +48,12 @@
 							</span>
 						</div>
 						<nav class="sidebar-content">
-							<a href="http://localhost/smartrent-system/initial" class="list">Lista de carros</a>
-							<a href="http://localhost/smartrent-system/car-registration" class="car-registration">Registrar novo carro</a>
-							<a href="http://localhost/smartrent-system/company-report" class="company-report">Relatório da empresa</a>
-							<a href="http://localhost/smartrent-system/car-report" class="car-report">Relatório de um carro</a>
+							<a href="http://localhost/smartrent-system/initial.html" class="available-list">Veículos disponíveis</a>
+							<a href="http://localhost/smartrent-system/unavailable-vehicles.html" class="unavailable-list">Veículos indisponíveis/locados</a>
+							<a href="http://localhost/smartrent-system/maintancement-vehicles.html" class="maintancement-list">Veículos em manutenção</a>
+							<a href="http://localhost/smartrent-system/car-registration.html" class="car-registration">Registrar novo carro</a>
+							<a href="http://localhost/smartrent-system/company-report.html" class="company-report">Relatório da empresa</a>
+							<a href="http://localhost/smartrent-system/car-report.html" class="car-report">Relatório de um carro</a>
 						</nav>
 					</aside>
 				</div>
@@ -93,7 +94,7 @@
 								<th>1.8</th>
 								<th>R$128,00/dia</th>
 								<th>Disponível para locação</th>
-								<th><a href="http://localhost/smartrent-system/single-tenancy">Visualizar</a></th>
+								<th><a href="http://localhost/smartrent-system/single-tenancy.html">Visualizar</a></th>
 							</tr>
 						</table>
 						<table>
@@ -101,89 +102,73 @@
 								<th>Ação</th>
 								<th>Data início</th>
 								<th>Data final</th>
-								<th>Preço/dia</th>
-								<th>Total</th>
+								<th class="vehicle-total">Total</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>15/01/2018</th>
+								<th>17/02/2018</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>16/03/2018</th>
+								<th>19/04/2018</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr>
+								<th>Manutenção</th>
+								<th>15/05/2018</th>
+								<th>17/06/2018</th>
+								<th class="vehicle-total">-R$260,00</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>15/08/2018</th>
+								<th>17/09/2018</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr>
+								<th>Manutenção</th>
+								<th>20/09/2018</th>
+								<th>14/10/2018</th>
+								<th class="vehicle-total">-R$260,00</th>
+							</tr>
+							<tr>
+								<th>Manutenção</th>
+								<th>15/01/2019</th>
+								<th>17/02/2019</th>
+								<th class="vehicle-total">-R$260,00</th>
+							</tr>
+							<tr>
+								<th>Manutenção</th>
+								<th>15/03/2019</th>
+								<th>17/04/2019</th>
+								<th class="vehicle-total">-R$260,00</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>15/05/2019</th>
+								<th>17/06/2019</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>15/07/2019</th>
+								<th>17/08/2019</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr>
+								<th>Locado</th>
+								<th>15/09/2019</th>
+								<th>17/10/2019</th>
+								<th class="vehicle-total">+R$384,00</th>
+							</tr>
+							<tr class="report-total">
+								<th>Total:</th>
 								<th></th>
-							</tr>
-							<tr>
-								<th>Chevrolet</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Chevrolet Epic</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Ford</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Ford Focus</th>
-								<th>2015</th>
-								<th>Prata</th>
-							</tr>
-							<tr>
-								<th>Fiat</th>
-								<th>Classe A</th>
-								<th>Picape</th>
-								<th>Fiat Strada</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Chevrolet</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Chevrolet Epic</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Ford</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Ford Focus</th>
-								<th>2015</th>
-								<th>Prata</th>
-							</tr>
-							<tr>
-								<th>Fiat</th>
-								<th>Classe A</th>
-								<th>Picape</th>
-								<th>Fiat Strada</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Chevrolet</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Chevrolet Epic</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Ford</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Ford Focus</th>
-								<th>2015</th>
-								<th>Prata</th>
-							</tr>
-							<tr>
-								<th>Fiat</th>
-								<th>Classe A</th>
-								<th>Picape</th>
-								<th>Fiat Strada</th>
-								<th>2015</th>
-								<th>Branco</th>
-							</tr>
-							<tr>
-								<th>Ford</th>
-								<th>Classe A</th>
-								<th>Sedan</th>
-								<th>Ford Focus</th>
-								<th>2015</th>
-								<th>Prata</th>
+								<th></th>
+								<th class="vehicle-total">+R$1.264,00</th>
 							</tr>
 						</table>
 					</section>

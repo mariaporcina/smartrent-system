@@ -13,7 +13,7 @@
 
 	$('main.login-main .login .login-form form input[type="submit"]').click(function(e){
 		e.preventDefault();
-		window.location.href = window.location.href + 'initial';
+		window.location.href = window.location.href + 'initial.html';
 	});
 
 	$('main.user-registration-main .user-registration .user-registration-form form input[type="submit"]').click(function(e){
@@ -52,9 +52,20 @@
 		$('body').addClass('stop-scroll');
 	});
 
-	$('main.main-single .pop-up-maintancement .maintancement span.close-pop-up').click(function(){
-		$('main.main-single .pop-up-maintancement').removeClass('active-pop-up');
+	$('main.main-single .single-pop-up .pop-up span.close-pop-up').click(function(){
+		$('main.main-single .single-pop-up').removeClass('active-pop-up');
 		$('body').removeClass('stop-scroll');
+	});
+
+	$('main.main-single .vehicle-info span.devolution-button a').click(function(e){
+		e.preventDefault();
+		$('main.main-single .pop-up-devolution').addClass('active-pop-up');
+		$('body').addClass('stop-scroll');
+	});
+
+	$('a.previous').click(function(){
+		let previous = document.referrer;
+		$(this).attr('href', previous);
 	});
 
 }());

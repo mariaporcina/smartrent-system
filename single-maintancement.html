@@ -52,22 +52,17 @@
 				</div>
 				<div class="col-sm-7">
 					<div class="vehicle-info">
-						<p class="vehicle-status available">Disponível para locação</p>
-						<p class="vehicle-name">Fiat Palio 2019</p>
+						<p class="vehicle-status maintenance">Indisponível para locação - em manutenção</p>
+						<p class="vehicle-name">Fiat Palio 2018</p>
 						<p class="vehicle-brand">Fiat</p>
 						<p class="vehicle-type">Compacto</p>
-						<p class="vehicle-model">2019</p>
+						<p class="vehicle-model">2018</p>
 						<p class="vehicle-power">1.8</p>
 						<p class="vehicle-color">Branco</p>
 						<p class="vehicle-group">Classe A</p>
-						<p class="vehicle-price">R$128,00/dia</p>
-						<span>
-							<span class="buttons rent-button">
-								<a href="http://localhost/smartrent-system/tenancy.html">Locar</a>
-							</span>
-							<span class="buttons maintancement-button">
-								<a href="#">Mandar para manutenção</a>
-							</span>
+						<p class="vehicle-price">R$120,00/dia</p>
+						<span class="buttons rent-button devolution-button">
+							<a href="#">Disponibilizar</a>
 						</span>
 						<div class="edit-button">
 							<a href="http://localhost/smartrent-system/car-registration.html">Editar</a>
@@ -86,22 +81,13 @@
 				</ul>
 			</div>
 		</div>
-		<div class="single-pop-up pop-up-maintancement">
+		<div class="single-pop-up pop-up-devolution">
 			<div class="pop-up">
 				<span class="close-pop-up">X</span>
-				<h4>Verificar na manutenção</h4>
-				<form class="pop-up-form">
-					<label for="what-to-review">Selecione o que deve ser revisado:</label>
-					<select name="what-to-review" id="what-to-review">
-						<option value="light">Farol/pisca</option>
-						<option value="wiper">Lipador de parabrisa</option>
-						<option value="brake">Freios</option>
-						<option value="tire">Pneus</option>
-						<option value="review">Revisão geral</option>
-					</select>
-					<label for="observation">Observações?(opcional)</label>
-					<textarea name="observation" id="observation" placeholder="Observações"></textarea>
-					<input type="submit" value="Enviar">
+				<h4>Lançar custos da manutenção</h4>
+				<form action="" class="pop-up-form">
+					<input type="number" placeholder="200">
+					<input type="submit" value="Lançar">
 				</form>
 			</div>
 		</div>

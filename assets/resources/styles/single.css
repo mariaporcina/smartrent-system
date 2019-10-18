@@ -126,7 +126,7 @@ main.main-single{
 			main.main-single .description ul li:nth-child(5)::before{
 				background-image: url(http://hcdesenvolvimentos.com/mp/coin.svg);
 			}
-	main.main-single .pop-up-maintancement{
+	main.main-single .single-pop-up{
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -138,7 +138,7 @@ main.main-single{
 		box-shadow: 0 0 13px -9px #000;
 		background-color: rgba(0, 0, 0, 0.56);
 	}
-		main.main-single .pop-up-maintancement .maintancement{
+		main.main-single .single-pop-up .pop-up{
 			background-color: #fff;
 			width: 100%;
 			max-width: 900px;
@@ -148,7 +148,7 @@ main.main-single{
 			position: relative;
 			padding: 18px 30px;
 		}
-			main.main-single .pop-up-maintancement .maintancement span.close-pop-up{
+			main.main-single .single-pop-up .pop-up span.close-pop-up{
 				position: absolute;
 				color: var(--danger);
 				font-size: 21px;
@@ -163,19 +163,19 @@ main.main-single{
 				text-align: center;
 				height: 30px;
 			}
-			main.main-single .pop-up-maintancement .maintancement h4{}
-			main.main-single .pop-up-maintancement .maintancement form.maintancement-form{
+			main.main-single .single-pop-up .pop-up h4{}
+			main.main-single .single-pop-up .pop-up form.pop-up-form{
 				display: flex;
 				flex-direction: column;
 			}
-				main.main-single .pop-up-maintancement .maintancement form.maintancement-form label{
+				main.main-single .single-pop-up .pop-up form.pop-up-form label{
 					margin: 15px 0 3px;
 				}
-				main.main-single .pop-up-maintancement .maintancement form.maintancement-form select{
+				main.main-single .single-pop-up .pop-up form.pop-up-form select{
 					padding: 5px 10px;
 					outline: none;
 				}
-				main.main-single .pop-up-maintancement .maintancement form.maintancement-form input{
+				main.main-single .single-pop-up .pop-up form.pop-up-form input{
 					border: none;
 					background-color: var(--vermelho);
 					color: #fff;
@@ -184,7 +184,15 @@ main.main-single{
 					margin: 10px 0 0;
 					outline: none;
 				}
-				main.main-single .pop-up-maintancement .maintancement form.maintancement-form textarea{
+				main.main-single .single-pop-up .pop-up form.pop-up-form input[type="number"]{
+					background-color: transparent;
+					border: 1px solid #ccc;
+					max-width: 100%;
+					display: block;
+					padding: 5px 15px;
+					color: initial;
+				}
+				main.main-single .single-pop-up .pop-up form.pop-up-form textarea{
 					padding: 5px 10px;
 					height: 90px;
 					outline: none;

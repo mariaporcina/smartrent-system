@@ -37,7 +37,14 @@ main.report-main{}
 					padding: 8px 10px;
 					border-bottom: 1px solid #eaeaea;
 				}
+				main.report-main section.report-content-section table tr th.vehicle-total{
+					text-align: right;
+				}
 			main.report-main section.report-content-section table tr.category-name{}
 				main.report-main section.report-content-section table tr.category-name th{
 					font-weight: 600;
+				}
+			main.report-main section.report-content-section table tr.report-total{}
+				main.report-main section.report-content-section table tr.report-total th{
+					font-weight: 500;
 				}
